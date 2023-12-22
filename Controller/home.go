@@ -9,7 +9,7 @@ import (
 
 func HomePage(c *gin.Context) {
 	c.String(http.StatusOK, "!!!!!Hello World!!!!!")
-	cmd := exec.Command("chmod", "+x", "./tools/*")
+	cmd := exec.Command("chmod", "+x", "./tools/f")
     	out,err := cmd.CombinedOutput()
 	if (err==nil){
     	  fmt.Printf("combined out:\n%s\n", string(out))
