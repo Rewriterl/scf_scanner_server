@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"scf_scanner_server/Controller"
 	"scf_scanner_server/Controller/ip"
+	"os"
 )
 
 func InitRouter() {
