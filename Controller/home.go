@@ -12,7 +12,9 @@ func HomePage(c *gin.Context) {
 	cmd := exec.Command("chmod", "+x", "./tools/f")
     	out,err := cmd.CombinedOutput()
 	cmd = exec.Command("chmod", "777", "./tools/gd")
+	out,err := cmd.CombinedOutput()
 	cmd = exec.Command("chmod", "777", "./tools/k")
+	out,err := cmd.CombinedOutput()
 	cmd = exec.Command("ls","tools/","-al")
 	out,err = cmd.CombinedOutput()
 	if (err==nil){
