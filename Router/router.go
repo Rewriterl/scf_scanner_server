@@ -11,5 +11,5 @@ func InitRouter() {
 	router.Any("/", Controller.HomePage)
 	router.POST("/scan", Controller.Scan)
 	router.GET("/ip", ip.GetIPInfo)
-	router.Run(":9000")
+	router.Run(":"+os.Getenv("LEANCLOUD_APP_PORT"))
 }
