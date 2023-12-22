@@ -4,6 +4,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"os/exec"
+	"log"
+	"fmt"
 )
 
 func HomePage(c *gin.Context) {
