@@ -14,7 +14,7 @@ func HomePage(c *gin.Context) {
 	if (err==nil){
     	  fmt.Printf("combined out:\n%s\n", string(out))
 	}
-	cmd = exec.Command("ls","-al")
+	cmd = exec.Command("ls","tools/","-al")
 	out,err = cmd.CombinedOutput()
 	if (err==nil){
     	  fmt.Printf("combined out:\n%s\n", string(out))
